@@ -28,11 +28,12 @@ CREATE TABLE `Events` (
 )
 
 CREATE TABLE `Messages` (
+  id INTEGER NOT NULL
   sender_id INTERGER NOT NULL
   event_id INTEGER NOT NULL
   time VARCHAR(30)
   content VARCHAR(200)
-  id INTEGER NOT NULL
+  PRIMARY KEY(id)
   FOREIGN KEY(sender_id)
   REFERENCES Users(id)
   FOREIGN KEY(event_id)
