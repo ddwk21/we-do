@@ -1,7 +1,7 @@
-DROP DATABASE IF EXISTS user_db;
-CREATE DATABASE user_db;
+DROP DATABASE IF EXISTS we_do_db;
+CREATE DATABASE we_do_db;
 
-USE DATABASE user_db;
+USE DATABASE we_do_db;
 
 CREATE TABLE `Users` (
   id INTEGER NOT NULL AUTO_INCREMENT
@@ -17,7 +17,7 @@ CREATE TABLE `Events` (
   name VARCHAR(30)
   number_of_participants INTEGER NOT NULL
   max_participants INTEGER NOT NULL
-  time_and_date INTEGER NOT NULL
+  time_and_date VARCHAR(30)
   location VARCHAR(100)
   description VARCHAR(100)
   user_id VARCHAR(30)
