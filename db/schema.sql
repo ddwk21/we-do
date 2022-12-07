@@ -6,6 +6,7 @@ USE DATABASE user_db;
 CREATE TABLE `Users` (
   id INTEGER NOT NULL AUTO_INCREMENT
   username VARCHAR(30)
+  password VARCHAR(30)
   zip_code INTEGER NOT NULL
   interests VARCHAR(100)
   PRIMARY KEY(id)
