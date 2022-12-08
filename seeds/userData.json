@@ -2,7 +2,7 @@
   {
     "name": "Sal",
     "email": "sal@hotmail.com",
-    "password": "password12345"
+    "password": "idahoMan1975"
   },
   {
     "name": "Lernantino",
@@ -23,6 +23,37 @@
   {
     "name": "Blake",
     "email": "the_blake@yahoo.com",
+    "password": "DallasCowboysFan97"
+  },
+  {
+    "name": "Sunny",
+    "email": "webguardiansunny@hotmail.com",
+    "password": ""
+  },
+  {
+    "name": "Zeke",
+    "email": "ridewithzeke@hotmail.com",
+    "password": "superbird70"
+  },
+  {
+    "name": "Bryson",
+    "email": "TheBrysIsRight@yahoo.com",
     "password": "password12345"
-  }
+  },
+  {
+    "name": "Ishida",
+    "email": "judojusticekusanagi@spectrum.net",
+    "password": "yusri_rizal"
+  },
+  {
+    "name": "Joseph",
+    "email": "juggalojoseph@aol.com",
+    "password": "woopwoopfanta"
+  },
+
+
+
+
+
+
 ]
