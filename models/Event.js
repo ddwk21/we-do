@@ -46,9 +46,11 @@ Event.init(
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'Event',
+        modelName: 'event',
     }
 );
+
+module.exports = Event;
 
 
 // ask if we need to include foreign keys

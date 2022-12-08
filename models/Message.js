@@ -45,6 +45,6 @@ Message.init(
   modelName: 'message',
 });
 
-module.exports = message;
+module.exports = Message;
 
 //Do we need reference to foreign key here or anything similar?
