@@ -38,7 +38,7 @@
   {
     "name": "Bryson",
     "email": "TheBrysIsRight@yahoo.com",
-    "password": "password12345"
+    "password": "welcome1"
   },
   {
     "name": "Ishida",
@@ -56,15 +56,27 @@
     "password": "opsgarrick"
   },
   {
-    "name": "Blake",
-    "email": "the_blake@yahoo.com",
-    "password": "password12345"
+    "name": "Nora",
+    "email": "thundervalkyrie42@yahoo.com",
+    "password": "renmakespancakes"
   },
   {
     "name": "Blu",
     "email": "blurivers@proton.com",
     "password": "egirlwarcrimes"
+  },
+  {
+    "name": "Cheng",
+    "email": "chengleofoong@.com",
+    "password": "mnla1948"
+  },
+  {
+    "name": "Blake",
+    "email": "the_blake@yahoo.com",
+    "password": "password12345"
   }
+  
+
 
 
 
