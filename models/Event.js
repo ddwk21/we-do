@@ -38,7 +38,12 @@ Event.init(
         user_id: {
             type: DataTypes.STRING,
             allowNull: false,
-        }
+            references: {
+                model: 'Users',
+                key: 'id',
+            },
+        },
+
 
     },
     {
