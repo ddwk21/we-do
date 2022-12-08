@@ -16,10 +16,18 @@ Message.init(
     sender_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
+      references: {
+        model: 'Users',
+        key: 'id',
+      },
     },
     event_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
+      references: {
+        model: 'Events',
+        key: 'id',
+      },
     },
     time: {
       type: DataTypes.STRING,
@@ -29,14 +37,7 @@ Message.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    zipcode: {
-      type: DataTypes.INTEGER,
-      allowNull:false,
-    },
-    interests: {
-      type: DataTypes.STRING,
-  }
-},
+  },
 {
   sequelize,
   timestamps: false,
@@ -47,4 +48,3 @@ Message.init(
 
 module.exports = Message;
 
-//Do we need reference to foreign key here or anything similar?

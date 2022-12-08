@@ -1,28 +1,37 @@
 [
   {
-    "name": "Sal",
+    "username": "Sal",
     "email": "sal@hotmail.com",
-    "password": "password12345"
-  },
-  {
-    "name": "Lernantino",
-    "email": "lernantino@gmail.com",
-    "password": "password12345"
-  },
-  {
-    "name": "Amiko",
-    "email": "amiko2k20@aol.com",
-    "password": "password12345"
-  },
-  {
-    "name": "Bryce",
-    "email": "jordan99@msn.com",
     "password": "password12345",
-    "zip_code": "54956"
+    "zip_code": "54956",
+    "interests": "Golf"
   },
   {
-    "name": "Blake",
-    "email": "the_blake@yahoo.com",
-    "password": "password12345"
+    "username": "Sal",
+    "email": "sal@hotmail.com",
+    "password": "password12345",
+    "zip_code": "54956",
+    "interests": "Golf"
+  },
+  {
+    "username": "Sal",
+    "email": "sal@hotmail.com",
+    "password": "password12345",
+    "zip_code": "54956",
+    "interests": "Golf"
+  },
+  {
+    "username": "Sal",
+    "email": "sal@hotmail.com",
+    "password": "password12345",
+    "zip_code": "54956",
+    "interests": "Golf"
+  },
+  {
+    "username": "Sal",
+    "email": "sal@hotmail.com",
+    "password": "password12345",
+    "zip_code": "54956",
+    "interests": "Golf"
   }
 ]

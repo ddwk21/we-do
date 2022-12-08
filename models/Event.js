@@ -42,6 +42,10 @@ Event.init(
         tags: {
             type: DataTypes.STRING,
             allownull: false,
+            references: { 
+                model: 'Users',
+                key: 'id',
+            },
         },
     },
     {
