@@ -38,13 +38,15 @@ Event.init(
         user_id: {
             type: DataTypes.STRING,
             allowNull: false,
-            references: {
+        },
+        tags: {
+            type: DataTypes.STRING,
+            allownull: false,
+            references: { 
                 model: 'Users',
                 key: 'id',
             },
         },
-
-
     },
     {
         sequelize,
