@@ -36,21 +36,15 @@ Message.init(
     interests: {
       type: DataTypes.STRING,
   }
-//   {
-//     hooks: {
-//       beforeCreate: async (newUserData) => {
-//         newUserData.password = await bcrypt.hash(newUserData.password, 10);
-//         return newUserData;
-//       },
-//     },
-//     sequelize,
-//     timestamps: false,
-//     freezeTableName: true,
-//     underscored: true,
-//     modelName: 'message',
-//   }
-// );
+},
+{
+  sequelize,
+  timestamps: false,
+  freezeTableName: true,
+  underscored: true,
+  modelName: 'message',
+});
 
-module.exports = Message;
+module.exports = message;
 
 //Do we need reference to foreign key here or anything similar?
