@@ -48,7 +48,7 @@ Event.init(
         underscored: true,
         modelName: 'Event',
     }
-)
+);
 
 
 // ask if we need to include foreign keys

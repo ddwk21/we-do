@@ -15,9 +15,10 @@
     "password": "password12345"
   },
   {
-    "name": "Jordan",
+    "name": "Bryce",
     "email": "jordan99@msn.com",
-    "password": "password12345"
+    "password": "password12345",
+    "zip_code": "54956"
   },
   {
     "name": "Blake",

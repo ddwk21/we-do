@@ -34,7 +34,7 @@ User.init(
       validate: {
         len: [8],
       },
-    zipcode: {
+    zip_code: {
       type: DataTypes.INTEGER,
       allowNull:false,
     }
