@@ -1,0 +1,23 @@
+[
+    {
+        "sender_id": 1,
+        "event_id": 1,
+        "time": "3:00",
+        "content": "This event sparked joy",
+        "id": 1
+    },
+    {
+        "sender_id": 2,
+        "event_id": 1,
+        "time": "3:05",
+        "content": "This event did not spark joy",
+        "id": 2
+    },
+    {
+        "sender_id": 3,
+        "event_id": 1,
+        "time": "3:10",
+        "content": "I am positively neutral about what transpired",
+        "id": 3
+    }
+]

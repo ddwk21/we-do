@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "name": "Hiking",
+        "number_of_participants": 2,
+        "max_participants": 5,
+        "time_and_date": "12:00 Jan/1/2023",
+        "location": "Colorado",
+        "description": "",
+        "user_id": 1,
+        "tags": ""
+    },
+    {
+        "id": 2,
+        "name": "Swimming",
+        "number_of_participants": 2,
+        "max_participants": 5,
+        "time_and_date": "1:00 Jan/1/2023",
+        "location": "New York City, NY",
+        "description": "",
+        "user_id": 2,
+        "tags": ""
+    },
+    {
+        "id": 3,
+        "name": "Golf",
+        "number_of_participants": 2,
+        "max_participants": 5,
+        "time_and_date": "2:00 Jan/1/2023",
+        "location": "Greenwich, CT",
+        "description": "",
+        "user_id": 3,
+        "tags": ""
+    }
+]

@@ -3,7 +3,7 @@ const { User, Message, Event } = require('../models');
 //import middleware
 const withAuth = require('../utils/auth');
 
-router.get('/event', withAuth, async (req,res) => {
+router.get('/', withAuth, async (req,res) => {
   try {
     const dbeventData = await Event.findAll({
       include: [

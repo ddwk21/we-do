@@ -2,26 +2,95 @@
   {
     "name": "Sal",
     "email": "sal@hotmail.com",
-    "password": "password12345"
+    "password": "idahoMan1975",
+    "zip_code": "54631",
+    "interest": "Golf"
   },
   {
     "name": "Lernantino",
     "email": "lernantino@gmail.com",
-    "password": "password12345"
+    "password": "password12345",
+    "zip_code": "54644",
+    "interest": "Croquet"
   },
   {
-    "name": "Amiko",
-    "email": "amiko2k20@aol.com",
-    "password": "password12345"
+    "username": "Sal",
+    "email": "sal@hotmail.com",
+    "password": "password12345",
+    "zip_code": "54703",
+    "interest": "Croquet"
   },
   {
-    "name": "Jordan",
-    "email": "jordan99@msn.com",
-    "password": "password12345"
+    "name": "Bryce",
+    "email": "knightbryce@msn.com",
+    "password": "morningstar",
+    "zip_code": "54724",
+    "interests": "HEMA"
+    
   },
   {
     "name": "Blake",
     "email": "the_blake@yahoo.com",
-    "password": "password12345"
+    "password": "DallasCowboysFan97",
+    "zip_code": "54667",
+    "interests": "Football"
+
+  },
+  {
+    "name": "Sunny",
+    "email": "webguardiansunny@hotmail.com",
+    "password": "novaisthecutest",
+    "zip_code": "54467",
+    "interests": "Skiing"
+
+  },
+  {
+    "name": "Zeke",
+    "email": "ridewithzeke@hotmail.com",
+    "password": "superbird70",
+    "zip_code": "54492",
+    "interests": "Flat Track Racing"
+  },
+  {
+    "name": "Bryson",
+    "email": "TheBrysIsRight@yahoo.com",
+    "password": "welcome1",
+    "zip_code": "54524",
+    "interests": "Rock Climbing"
+  },
+  {
+    "name": "Ishida",
+    "email": "judojusticekusanagi@spectrum.net",
+    "password": "yusri_rizal",
+    "zip_code": "54524",
+    "interests": "Judo"
+  },
+  {
+    "name": "Joseph",
+    "email": "juggalojoseph@aol.com",
+    "password": "woopwoopfanta",
+    "zip_code": "54562",
+    "interests": "Basketball"
+  },
+  {
+    "username": "Sal",
+    "email": "sal@hotmail.com",
+    "password": "password12345",
+    "zip_code": "54956",
+    "interests": "Golf"
+  },
+  {
+    "username": "Sal",
+    "email": "sal@hotmail.com",
+    "password": "password12345",
+    "zip_code": "54956",
+    "interests": "Golf"
+  },
+  {
+    "username": "Sal",
+    "email": "sal@hotmail.com",
+    "password": "password12345",
+    "zip_code": "54956",
+    "interests": "Golf"
   }
 ]
