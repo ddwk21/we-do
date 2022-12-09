@@ -42,8 +42,15 @@ Event.init(
         user_id: {
             type: DataTypes.STRING,
             allowNull: false,
-        }
-
+        },
+        tags: {
+            type: DataTypes.STRING,
+            allownull: false,
+            references: { 
+                model: 'Users',
+                key: 'id',
+            },
+        },
     },
     {
         sequelize,
