@@ -25,9 +25,9 @@ router.get('/', withAuth, async (req,res) => {
     event.get({ plain: true })
     );
 
-    res.render('events', {
+    res.render('homepage', {
       events,
-      loggedIn: req.session.loggedIn,
+      logged_in: req.session.logged_in,
     });
   } catch (err) {
     console.log(err);
@@ -41,7 +41,7 @@ router.get('/login', (req, res) => {
     return;
   }
 
-res.render('login');
+  res.render('login');
 });
 
 module.exports = router;
