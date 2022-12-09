@@ -3,7 +3,7 @@ const { User, Message, Event } = require('../models');
 //import middleware
 const withAuth = require('../utils/auth');
 
-router.get('/', withAuth, async (req,res) => {
+router.get('/',async (req,res) => {
   try {
     const dbeventData = await Event.findAll({
       include: [
@@ -21,11 +21,13 @@ router.get('/', withAuth, async (req,res) => {
       ],
     });
 
+    console.log(dbeventData)
+
     const events = dbeventData.map((event) => 
     event.get({ plain: true })
     );
 
-    res.render('events', {
+    res.render('homepage', {
       events,
       loggedIn: req.session.loggedIn,
     });
