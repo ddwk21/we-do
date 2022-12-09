@@ -40,16 +40,12 @@ Event.init(
             allowNull: false,
         },
         user_id: {
-            type: DataTypes.STRING,
+            type: DataTypes.INTEGER,
             allowNull: false,
-        },
-        tags: {
-            type: DataTypes.STRING,
-            allownull: false,
-            references: { 
-                model: 'Users',
+            references: {
+                model: 'user',
                 key: 'id',
-            },
+              },
         },
     },
     {

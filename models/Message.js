@@ -17,7 +17,7 @@ Message.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {
-        model: 'Users',
+        model: 'user',
         key: 'id',
       },
     },
@@ -25,7 +25,7 @@ Message.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {
-        model: 'Events',
+        model: 'event',
         key: 'id',
       },
     },
