@@ -1,10 +1,22 @@
-{{#each users as |user| }}
-<div class="row align-center mb-5">
-  <div class="col-md-6">
-    <h2>{{{get_emoji}}} {{user.name}}</h2>
+ <div class="row align-items-center">
+    <div class="col-4" id="menu">
+      <h3 class="menu-title">Menu</h3>
+      <ul class="menu-items">
+        <li>Profile</li>
+        <li>Home</li>
+        <li>Your events</li>
+        <li>Watchlist</li>
+      </ul>
+    </div>
+    <div class="col-8" id="events">
+      {{!-- add events divs here --}}
+      {{#each events as |event|}}
+      <div class="">
+        <h2>{{name}}</h2>
+        <p>{{location}}    {{time_and_date}}</p>
+        <p>{{tags}}    {{number_of_participants}}/{{max_participants}}</p>
+      </div>
+      {{/each}}
+    </div>
   </div>
-  <div class="col-md-6">
-    <h3><a href="mailto:{{user.email}}">{{user.email}}</a></h3>
-  </div>
-</div>
-{{/each}}
+

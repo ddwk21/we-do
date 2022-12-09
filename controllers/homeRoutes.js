@@ -28,8 +28,13 @@ router.get('/', withAuth ,async (req,res) => {
     );
 
     res.render('homepage', {
+<<<<<<< HEAD
+      events,
+      logged_in: req.session.logged_in,
+=======
       users,
       logged_In: req.session.logged_In,
+>>>>>>> edf51105022a3e756724eb46e5236d233a93889a
     });
   } catch (err) {
     console.log(err);
@@ -43,7 +48,7 @@ router.get('/login', (req, res) => {
     return;
   }
 
-res.render('login');
+  res.render('login');
 });
 
 module.exports = router;
