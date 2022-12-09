@@ -35,17 +35,17 @@ Event.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
-        user_id: {
+        tags: {
             type: DataTypes.STRING,
             allowNull: false,
         },
-        tags: {
-            type: DataTypes.STRING,
-            allownull: false,
-            references: { 
-                model: 'Users',
+        user_id: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            references: {
+                model: 'user',
                 key: 'id',
-            },
+              },
         },
     },
     {

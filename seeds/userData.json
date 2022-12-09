@@ -14,8 +14,8 @@
     "interest": "Croquet"
   },
   {
-    "name": "Amiko",
-    "email": "amiko2k20@aol.com",
+    "username": "Sal",
+    "email": "sal@hotmail.com",
     "password": "password12345",
     "zip_code": "54703",
     "interest": "Croquet"
@@ -73,65 +73,24 @@
     "interests": "Basketball"
   },
   {
-    "name": "Saraswarthy",
-    "email": "blackcatsaras@gmail.com",
-    "password": "opsgarrick",
-    "zip_code": "54384",
-    "interests": "Baseball"
+    "username": "Sal",
+    "email": "sal@hotmail.com",
+    "password": "password12345",
+    "zip_code": "54956",
+    "interests": "Golf"
   },
   {
-    "name": "Nora",
-    "email": "thundervalkyrie42@yahoo.com",
-    "password": "renmakespancakes",
-    "zip_code": "54810",
-    "interests": "Croquet"
+    "username": "Sal",
+    "email": "sal@hotmail.com",
+    "password": "password12345",
+    "zip_code": "54956",
+    "interests": "Golf"
   },
   {
-    "name": "Bart",
-    "email": "elBarto@gmail.com",
-    "password": "saytheline",
-    "zip_code": "54768",
-    "interests": "Football"
+    "username": "Sal",
+    "email": "sal@hotmail.com",
+    "password": "password12345",
+    "zip_code": "54956",
+    "interests": "Golf"
   }
-  {
-    "name": "Blu",
-    "email": "blurivers@proton.com",
-    "password": "egirlwarcrimes",
-    "zip_code": "54492",
-    "interests": "Freestyle Hardcore Walking"
-  },
-  {
-    "name": "Cheng",
-    "email": "chengleofoong@yandex.com",
-    "password": "mnla1948",
-    "zip_code": "54669",
-    "interests": "Baseball"
-  },
-  {
-    "name": "Homer",
-    "email": "chunkylover53@aol.com",
-    "password": "password",
-    "zip_code": "54467",
-    "interests": "Bowling"
-  },
-  {
-    "name": "Yusri",
-    "email": "rizalyusri@charter.net",
-    "password": "ishidakusanagi",
-    "zip_code": "54457",
-    "interests": "Judo"
-  },
-  {
-    "name": "Daryaz",
-    "email": "heyzuesraptor@xfinity.com",
-    "password": "rapsittiestreet",
-    "zip_code": "54262",
-    "interests": "Bodybuilding"
-  },
-  {"name": "Brennan",
-  "email": "backinbren@xfinity.com",
-  "password": "halo343",
-  "zip_code": "54762",
-  "interests": "Camping"
-}
 ]
