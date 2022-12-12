@@ -1,5 +1,4 @@
-// Get the modal
-var modal = document.getElementById("addModal");
+
 
 // Get the button that opens the modal
 var btn = document.getElementById("addEvent");
@@ -8,12 +7,13 @@ var btn = document.getElementById("addEvent");
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
-btn.onclick = function() {
+function displayModal() {
   modal.style.display = "block";
+  console.log('click')
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+function closeModal() {
   modal.style.display = "none";
 }
 
@@ -23,3 +23,7 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+document.querySelector('#addModal').addEventListener('clicik', displayModal);
+
+document.querySelector('#close').addEventListener('click', closeModal);
