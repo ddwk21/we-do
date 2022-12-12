@@ -15,12 +15,21 @@
       User Registry
     </h1>
     <nav>
+      <button class="btn" id="addEvent">+</button>
     {{#if logged_in}}
       <button class="btn" id="logout">logout</button>
     {{/if}}
     </nav>
   </header>
   <main class="container container-fluid mt-5">
+    <div id="addModal" class="modal">
+      <div class="modal-content">
+        <span class="close">CloseButton</span>
+        <p class="eventField">Field One</p>
+        <p class="eventField">Field Two</p>
+        <p class="eventField">Field Three</p>
+      </div>
+    </div>
     {{{ body }}}
   </main>
   <footer>
@@ -30,6 +39,7 @@
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}
+  <script src="main.js"></script>
 </body>
 
 </html>
