@@ -5,6 +5,8 @@ const withAuth = require('../utils/auth');
 
 router.get('/', withAuth ,async (req,res) => {
   try {
+    // get req session user id
+    // query user.findbypk
     const dbeventData = await Event.findAll({
       include: [
         {
