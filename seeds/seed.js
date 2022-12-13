@@ -1,7 +1,21 @@
 const sequelize = require('../config/connection');
 const { User, Message, Event } = require('../models');
 
-const{randFirstName, randEmail, randPassword, randZipCode} = require("@ngneat/falso")
+// const loremIpsum = require("lorem-ipsum").loremIpsum;;
+// // const LoremIpsum = require("lorem-ipsum").LoremIpsum;
+
+// const lorem = new LoremIpsum({
+//   sentencesPerParagraph: {
+//     max: 8,
+//     min: 4
+//   },
+//   wordsPerSentence: {
+//     max: 16,
+//     min: 4
+//   }
+// });
+
+const{randFirstName, randEmail, randPassword, randZipCode, randCity} = require("@ngneat/falso")
 
 const activities = ['golf', 'hiking', 'swimming', 'basketball', 'gaming']
 
@@ -27,12 +41,33 @@ function userGen(){
   return gennedUsers;
 }
 
+function eventGen(){
+  let gennedEvents = []
+
+  for(let i = 0; i<100; i++){
+    let participants = Math.floor(Math.random()*10)
+    let activity = activities[Math.floor(Math.random()*activities.length)]
+    let currentParticipants = participants-1
+    let event = {
+      name: activity,
+      number_of_participants: currentParticipants,
+      max_participants: participants,
+      location: randCity(),
+      description: `Going to do some ${activity} Need ${participants} people and have ${currentParticipants} `,
+      user_id: Math.floor(Math.random()*100),
+      tags: activity
+    }
+    gennedUsers.push(user)
+    
+  }
+  return gennedUsers;
+}
+
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
 
   let additionalUsers = userGen()
-  console.log(additionalUsers)
 
   await User.bulkCreate([...
     userData,
