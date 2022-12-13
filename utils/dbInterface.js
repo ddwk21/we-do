@@ -23,3 +23,5 @@ async function addUser(username, email, password, zip_code, interest) {
         interest: interest
      })
 }    
+
+exports.addEvent = addEvent;

@@ -1,3 +1,7 @@
+// const dbInterface = require('../../utils/dbInterface.js')
+
+const { response } = require("express");
+
 // Get the modal
 var modal = document.getElementById("addModal");
 
@@ -6,6 +10,10 @@ var btn = document.getElementById("addEvent");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
+
+var submit = document.getElementById("submitBtn")
+
+var form = document.getElementById('modalForm')
 
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
@@ -23,3 +31,33 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+function handleSubmit(e){
+
+  e.preventDefault();
+
+  const {nameInput, descInput, locInput, timeInput, maxPartInput, tagInput} = e.target.elements
+
+  let eventData = {
+    name: nameInput.value,
+    max_participants: maxPartInput.value,
+    description: descInput.value,
+    location: locInput.value,
+    time_and_date: timeInput.value,
+    user_id:3, //figure this one out
+    tags: tagInput.value
+  }
+
+  fetch('/api/eventRoutes', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(eventData)
+  })
+
+  console.log(nameInput.value)
+
+}
+
+form.addEventListener('submit', handleSubmit)
