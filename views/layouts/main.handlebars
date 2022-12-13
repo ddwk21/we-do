@@ -15,6 +15,7 @@
       <h1>
         WE DO
       </h1>
+      {{#if logged_in}}
       <nav class="header-options">
         <button class="btn" id="addEvent">+</button>
         <div class="dropdown">
@@ -27,14 +28,12 @@
             <li><a class="dropdown-item" href="#">Your events</a></li>
             <li><a class="dropdown-item" href="#">Watchlist</a></li>
             <li><a class="dropdown-item" href="#">
-              {{#if logged_in}}
-                <button class="btn" id="logout">Logout</button>
-              {{/if}}
+              <button class="btn" id="logout">Logout</button>
             </a></li>
-            
           </ul>
         </div>
       </nav>
+      {{/if}}
     </div>
   </header>
   <main>

@@ -17,7 +17,7 @@ const { User, Message, Event } = require('../models');
 
 const{randFirstName, randEmail, randPassword, randZipCode, randCity, randSoonDate} = require("@ngneat/falso")
 
-const activities = ['golf', 'hiking', 'swimming', 'basketball', 'gaming']
+const activities = ['Golf', 'Hiking', 'Swimming', 'Basketball', 'Gaming']
 
 const userData = require('./userData.json');
 const messageData = require('./messageData.json')

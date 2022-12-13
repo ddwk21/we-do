@@ -3,6 +3,40 @@ body {
   background-color: rgb(221, 221, 221);
 }
 
+.login-title {
+  margin-bottom: 30px;
+}
+
+#login-btn {
+  background-color: blue;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.login-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 300px;
+  border: solid 1px black;
+  border-radius: 8px;
+  padding-top: 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
 header {
   background-color: lightblue;
   height: 120px;
