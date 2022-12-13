@@ -1,6 +1,5 @@
 [
     {
-        "id": 1,
         "name": "Hiking",
         "number_of_participants": 2,
         "max_participants": 5,
@@ -11,7 +10,7 @@
         "tags": ""
     },
     {
-        "id": 2,
+
         "name": "Swimming",
         "number_of_participants": 2,
         "max_participants": 5,
@@ -22,7 +21,6 @@
         "tags": ""
     },
     {
-        "id": 3,
         "name": "Golf",
         "number_of_participants": 2,
         "max_participants": 5,

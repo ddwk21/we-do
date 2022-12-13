@@ -15,7 +15,7 @@ const { User, Message, Event } = require('../models');
 //   }
 // });
 
-const{randFirstName, randEmail, randPassword, randZipCode, randCity} = require("@ngneat/falso")
+const{randFirstName, randEmail, randPassword, randZipCode, randCity, randSoonDate} = require("@ngneat/falso")
 
 const activities = ['golf', 'hiking', 'swimming', 'basketball', 'gaming']
 
@@ -43,6 +43,7 @@ function userGen(){
 
 function eventGen(){
   let gennedEvents = []
+  
 
   for(let i = 0; i<100; i++){
     let participants = Math.floor(Math.random()*10)
@@ -52,6 +53,7 @@ function eventGen(){
       name: activity,
       number_of_participants: currentParticipants,
       max_participants: participants,
+      time_and_date: `12:00 ${randSoonDate()}`,
       location: randCity(),
       description: `Going to do some ${activity} Need ${participants} people and have ${currentParticipants} `,
       user_id: Math.floor(Math.random()*100),
@@ -70,9 +72,7 @@ const seedDatabase = async () => {
   let additionalUsers = userGen()
   let additionalEvents = eventGen()
 
-  await User.bulkCreate([...
-    userData,
-    ...additionalUsers],
+  await User.bulkCreate([...userData,...additionalUsers],
      
     {
     individualHooks: true,
