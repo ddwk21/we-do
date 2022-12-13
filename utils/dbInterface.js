@@ -13,3 +13,13 @@ async function addEvent(name, noPart, maxPart, time, loc, desc,user,tags){
         tags:tags
     })
 }
+
+async function addUser(username, email, password, zip_code, interest) {
+    await User.create({
+        username: username,
+        email: email,
+        password: password,
+        zip_code: zip_code,
+        interest: interest
+     })
+}    
