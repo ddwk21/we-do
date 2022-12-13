@@ -57,10 +57,10 @@ function eventGen(){
       user_id: Math.floor(Math.random()*100),
       tags: activity
     }
-    gennedUsers.push(user)
+    gennedEvents.push(event)
     
   }
-  return gennedUsers;
+  return gennedEvents;
 }
 
 
@@ -68,6 +68,7 @@ const seedDatabase = async () => {
   await sequelize.sync({ force: true });
 
   let additionalUsers = userGen()
+  let additionalEvents = eventGen()
 
   await User.bulkCreate([...
     userData,
@@ -77,7 +78,7 @@ const seedDatabase = async () => {
     individualHooks: true,
     returning: true,
   });
-  await Event.bulkCreate(eventData, {
+  await Event.bulkCreate([...eventData,...additionalEvents], {
     individualHooks: true,
     returning: true,
   });
