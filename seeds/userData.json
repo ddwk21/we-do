@@ -14,9 +14,9 @@
     "interest": "Croquet"
   },
   {
-    "username": "Robert",
-    "email": "robert123@hotmail.com",
-    "password": "password12345",
+    "username": "George",
+    "email": "georgie@hotmail.com",
+    "password": "shannon12345",
     "zip_code": "54703",
     "interest": "Croquet"
   },
@@ -71,5 +71,61 @@
     "password": "woopwoopfanta",
     "zip_code": "54562",
     "interests": "Basketball"
+  },
+  {
+    "username": "Chloe",
+    "email": "Kluie@aol.com",
+    "password": "password12345",
+    "zip_code": "54956",
+    "interests": "Skateboarding"
+  },
+  {
+    "username": "Cassandra",
+    "email": "criticalcass@hotmail.com",
+    "password": "tj2vUCwr",
+    "zip_code": "54956",
+    "interests": "Golf"
+  },
+  {
+    "username": "Beatrice",
+    "email": "goldenwitch@gmail.com",
+    "password": "SpKJA6Y8",
+    "zip_code": "54926",
+    "interests": "Chess"
+  },
+  {
+    "username": "Rudolf",
+    "email": "uselessman@gmail.com",
+    "password": "rNZk5m4x",
+    "zip_code": "54953",
+    "interests": "Chess"
+  },
+  {
+    "username": "Yusri",
+    "email": "thewheelman@gmail.com",
+    "password": "ishida_kusanagi",
+    "zip_code": "54953",
+    "interests": "Racing"
+  },
+  {
+    "username": "Manuel",
+    "email": "MiamiMutilator@gmail.com",
+    "password": "magnum44",
+    "zip_code": "33129",
+    "interests": "Baseball"
+  },
+  {
+    "username": "Evan",
+    "email": "TopScoop@gmail.com",
+    "password": "YnXkgtkJ",
+    "zip_code": "33128",
+    "interests": "Chess"
+  },
+  {
+    "username": "Richter",
+    "email": "uselessman@gmail.com",
+    "password": "uzi9mm",
+    "zip_code": "53083",
+    "interests": "Football"
   }
 ]
