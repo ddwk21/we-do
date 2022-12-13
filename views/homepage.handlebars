@@ -1,4 +1,4 @@
- <div class="row align-items-center">
+ <div id="homepage-container">
     <div class="col-4" id="menu">
       <h3 class="menu-title">Menu</h3>
       <ul class="menu-items">
@@ -11,10 +11,20 @@
     <div class="col-8" id="events">
       {{!-- add events divs here --}}
       {{#each events as |event|}}
-      <div class="">
-        <h2>{{name}}</h2>
-        <p>{{location}}    {{time_and_date}}</p>
-        <p>{{tags}}    {{number_of_participants}}/{{max_participants}}</p>
+      <div class="event-card">
+        <div class="card-heading">
+          <h2 class="card-title">{{name}}</h2>
+          <button class="btn">Join event</button>
+        </div>
+        <div class="card-body">
+          <p>Location: {{location}}</p>
+          <p>Event begins: {{time_and_date}}</p>
+          <div class="description-body">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium veritatis soluta doloribus, consectetur omnis laboriosam voluptatem accusamus, aut itaque esse cum consequuntur earum recusandae dolores aliquam facere veniam tenetur? In. {{description}}</p>
+          </div>
+          <p>Participants joined: {{number_of_participants}}/{{max_participants}}</p>
+          <p>TEST{{tags}}</p>
+        </div>
       </div>
       {{/each}}
     </div>
