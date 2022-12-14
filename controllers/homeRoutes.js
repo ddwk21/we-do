@@ -48,8 +48,14 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
-router.post('/signup', (req,res, next) =>{
-  
+router.get('/signup', async (req,res, next) =>{
+  try {
+
+
+    res.render('signup')
+  } catch (err) {
+    res.status(400).json(err)
+  }
 })
 
 module.exports = router;
