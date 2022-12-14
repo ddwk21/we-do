@@ -17,6 +17,7 @@ Event.init(
         },
         number_of_participants: {
             type: DataTypes.INTEGER,
+            defaultValue: 0,
             allowNull: false,
         },
         max_participants: {
