@@ -61,3 +61,36 @@ function handleSubmit(e){
 }
 
 form.addEventListener('submit', handleSubmit)
+
+
+//account creation submission
+function createSubmit(e){
+
+  e.preventDefault();
+
+  const {nameSignup, emailSignup, ZIPSignup, passwordSignup, passwordConfirm} = e.target.elements
+
+  if(passwordSignup.value===passwordConfirm.value)
+  {  let userData = {
+      username: nameSignup.value,
+      email: emailSignup.value,
+      password: passwordSignup.value,
+      zip_code: ZIPSignup.value,
+      interests: null,
+    }}
+  else{
+    //add colored alert message logic with <p> at end of form.
+    return
+  }
+
+  fetch('/api/userRoutes/create', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(userData)
+  })
+
+  console.log(nameInput.value)
+
+}
