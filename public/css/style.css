@@ -108,6 +108,7 @@ header {
 
 #addEvent {
   margin-right: 15px;
+  border-radius: none;
 }
 
 #logout {
@@ -206,49 +207,44 @@ li {
 .btn {
   background-color: #73a24e;
   color: white;
-  border-radius: 5px;
-  border: solid 1px rgb(54, 54, 54);
+  border-radius: 0;
+  border: none;
   /* box-shadow: 2px 2px 10px black; */
 }
 
 .event-card {
-  background-color: rgba(255, 255, 255, 0.349);
+  background-color: #416a59;
   margin-bottom: 80px;
   padding: 20px;
-  border-radius: 10px;
   width: 900px;
-  box-shadow: 3px 3px 15px black;
 }
 
-.card-btn {
-  background-color: #416a59;
-  color: white;
-}
+
 
 .card-heading {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-bottom: 10px;
-  border-bottom: solid 1px #39395f;
+  border-bottom: solid 1px #f5eec2;
 }
 
 .card-title {
-  color: #39395f;
+  color: #f5eec2;
 }
 
 .card-body {
   margin-top: 15px;
-  color: #39395f;
+  color: #f5eec2;
 }
 
 .description-body {
-  background-color: #416a59;
-  color: white;
+  background-color: #f5eec2;
+  color: #416a59;
   height: 100%;
   width: 100%;
-  border: solid 1px black;
-  border-radius: 5px;
   padding-left: 15px;
   padding-top: 10px;
+  padding-bottom: 8px;
+  margin-bottom: 10px;
 }
