@@ -1,14 +1,96 @@
 body {
   height: 100%;
+  background-color: #f5eec2;
+  color: #416a59;
+}
+
+.login-title {
+  margin-bottom: 30px;
+}
+
+#login-btn {
+  background-color: #73a24e;
+  border: none;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.login-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 300px;
+  border: solid 1px #416a59;
+  border-radius: 8px;
+  padding-top: 30px;
+}
+
+.create-account-question {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  flex-direction: column;
+}
+
+#create-account-btn {
+  background-color: #73a24e;
+  margin-top: 15px;
+  color: white;
+  border: none;
+}
+
+.create-account-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+
+}
+
+.signup-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.signup-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: solid 1px black;
+  width: 400px;
+  border-radius: 10px;
+  padding-top: 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
 }
 
 header {
-  background-color: lightblue;
-  height: 120px;
+  background-color: #416a59;
+  height: 100px;
   display: flex;
   align-items: center;
   margin-bottom: 25px;
   padding: 15px;
+}
+
+.page-title {
+  color: #f5eec2;
 }
 
 .header-container {
@@ -17,6 +99,31 @@ header {
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
+}
+
+.header-options {
+  display: flex;
+  flex-direction: row;
+}
+
+#addEvent {
+  margin-right: 15px;
+}
+
+#logout {
+  background-color: transparent;
+  color: #39395f;
+  border: none;
+}
+
+.dropdown-menu {
+  background-color: #f5eec2;
+}
+
+.dropdown-item {
+  display: flex;
+  justify-content: center;
+  color: #39395f;
 }
 
 .modal {
@@ -64,10 +171,9 @@ main {
 
 #homepage-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   height: 100%;
   width: 100%;
-  background-color: gray;
   margin: none;
 }
 
@@ -75,7 +181,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: maroon;
   width: 200px;
 }
 
@@ -94,23 +199,30 @@ li {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: white;
   color: white;
   margin-right: 50px;
 }
 
 .btn {
-  background-color: lightgray;
+  background-color: #73a24e;
+  color: white;
   border-radius: 5px;
   border: solid 1px rgb(54, 54, 54);
   /* box-shadow: 2px 2px 10px black; */
 }
 
 .event-card {
-  background-color: rgb(36, 36, 68);
-  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.349);
+  margin-bottom: 80px;
   padding: 20px;
   border-radius: 10px;
+  width: 900px;
+  box-shadow: 3px 3px 15px black;
+}
+
+.card-btn {
+  background-color: #416a59;
+  color: white;
 }
 
 .card-heading {
@@ -118,20 +230,21 @@ li {
   flex-direction: row;
   justify-content: space-between;
   padding-bottom: 10px;
-  border-bottom: solid 1px white;
+  border-bottom: solid 1px #39395f;
 }
 
-/* .card-title {
-  
-} */
+.card-title {
+  color: #39395f;
+}
 
 .card-body {
   margin-top: 15px;
+  color: #39395f;
 }
 
 .description-body {
-  background-color: white;
-  color: black;
+  background-color: #416a59;
+  color: white;
   height: 100%;
   width: 100%;
   border: solid 1px black;
