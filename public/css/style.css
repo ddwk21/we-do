@@ -212,7 +212,7 @@ li {
 }
 
 .event-card {
-  background-color: #a9c25d;
+  background-color: rgba(255, 255, 255, 0.349);
   margin-bottom: 80px;
   padding: 20px;
   border-radius: 10px;
@@ -243,8 +243,8 @@ li {
 }
 
 .description-body {
-  background-color: #f5eec2;
-  color: black;
+  background-color: #416a59;
+  color: white;
   height: 100%;
   width: 100%;
   border: solid 1px black;
