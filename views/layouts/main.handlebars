@@ -19,7 +19,7 @@
       <nav class="header-options">
         <button class="btn" id="addEvent">+</button>
         <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <button class="btn-secondary dropdown-toggle" id="dropdown-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             Menu
           </button>
           <ul class="dropdown-menu">
@@ -40,9 +40,9 @@
     <div id="addModal" class="modal">
       <form id="modalForm">
         <div class="modal-content">
-          <span class="close">CloseButton</span>
+          <span class="close">x</span>
           <div class="form-group">
-            <label for="nameInput">Name</label>
+            <label for="nameInput">Event Name</label>
             <input type="text" class="form-control" id="nameInput">
           </div>
           <div class="form-group">
@@ -55,7 +55,7 @@
           </div>
           <div class="form-group">
             <label for="timeInput">Time and Date</label>
-            <input type="text" class="form-control" id="timeInput">
+            <input type="datetime-local" class="form-control" id="timeInput">
           </div>
 
           <div class="form-group">

@@ -14,6 +14,8 @@ var submit = document.getElementById("submitBtn")
 
 var form = document.getElementById('modalForm')
 
+
+
 // When the user clicks on the button, open the modal
 if(btn)
 {
@@ -67,4 +69,7 @@ function handleSubmit(e){
 
 }
 
+
+
 form.addEventListener('submit', handleSubmit)
+
