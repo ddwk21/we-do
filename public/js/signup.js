@@ -1,7 +1,3 @@
-
-
-
-
 var createForm = document.getElementById('signupForm')
 console.log(createForm)
 
