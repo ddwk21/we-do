@@ -44,19 +44,21 @@ router.post('/logout', (req, res) => {
 });
 
 router.post( '/create', async(req, res) => {
-  const {nameSignup, emailSignup, ZIPSignup, passwordSignup} = req.body
+  // const {nameSignup, emailSignup, ZIPSignup, passwordSignup} = req.body
   try {
-      await User.create({
-          username:nameSignup,
-          email:emailSignup,
-          password:passwordSignup,
-          zip_code:ZIPSignup,
-          interests:null,
-      })}
-
-  catch (err) {
-      res.status(400).json(err);
-    }
-  })
+    console.log(req.body)
+    const userData = await User.create(req.body)
+    
+    req.session.save(() => {
+      req.session.user_id = userData.id;
+      req.session.logged_in = true;
+      
+      res.json({ user: userData, message: 'You are now logged in!' });
+    });
+  }catch (err) {
+    console.log(err)
+    res.status(500).json(err);
+  }
+})
 
 module.exports = router;

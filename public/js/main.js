@@ -1,6 +1,5 @@
-// const dbInterface = require('../../utils/dbInterface.js')
 
-const { response } = require("express");
+
 
 // Get the modal
 var modal = document.getElementById("addModal");
@@ -16,8 +15,12 @@ var submit = document.getElementById("submitBtn")
 var form = document.getElementById('modalForm')
 
 // When the user clicks on the button, open the modal
-btn.onclick = function() {
+if(btn)
+{
+  btn.onclick = function() 
+  {
   modal.style.display = "block";
+  }
 }
 
 // When the user clicks on <span> (x), close the modal
@@ -48,53 +51,20 @@ function handleSubmit(e){
     tags: tagInput.value
   }
 
-  fetch('/api/eventRoutes', {
+  fetch('/api/events', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify(eventData)
   })
+  .then((res)=>{
+    if(res.ok) location.reload()
+  })
+  .catch((err)=>console.log(err))
 
   console.log(nameInput.value)
 
 }
 
 form.addEventListener('submit', handleSubmit)
-
-
-
-var createForm = document.getElementById('signupForm')
-//account creation submission
-function createSubmit(e){
-
-
-
-  e.preventDefault();
-
-  const {nameSignup, emailSignup, ZIPSignup, passwordSignup, passwordConfirm} = e.target.elements
-
-  if(passwordSignup.value===passwordConfirm.value)
-  {  let userData = {
-      username: nameSignup.value,
-      email: emailSignup.value,
-      password: passwordSignup.value,
-      zip_code: ZIPSignup.value,
-      interests: null,
-    }}
-  else{
-    //add colored alert message logic with <p> at end of form.
-    return
-  }
-
-  fetch('/api/userRoutes/create', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(userData)
-  })
-
-}
-
-createForm.addEventListener('submit', createSubmit)

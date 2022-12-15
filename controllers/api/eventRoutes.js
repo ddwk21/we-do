@@ -2,21 +2,20 @@ const router = require('express').Router();
 const { Event } = require('../../models');
 
 router.post( '/', async(req, res) => {
-    const {nameInput, noPart, maxPart, time, loc, desc} = req.body
+    // const {nameInput, noPart, maxPart, time, loc, desc, tags} = req.body
     try {
-        await Event.create({
-            name:nameInput,
-            number_of_participants:noPart,
-            max_participants:maxPart,
-            time_and_date:time,
-            location:loc,
-            description:desc,
-            user_id:user.id,//pass actual user object here
-            tags:tags
-        })}
+        console.log(req.body)
+        const newEvent = await Event.create({
+            ...req.body,
+            user_id:req.session.user_id,
 
-    catch (err) {
-        res.status(400).json(err);
+ 
+        })
+        res.json(newEvent)
+
+    }catch (err) {
+        console.log(err)
+        res.status(500).json(err);
       }
     })
 
