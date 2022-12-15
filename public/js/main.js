@@ -1,6 +1,3 @@
-
-
-
 // Get the modal
 var modal = document.getElementById("addModal");
 
@@ -68,3 +65,4 @@ function handleSubmit(e){
 }
 
 form.addEventListener('submit', handleSubmit)
+

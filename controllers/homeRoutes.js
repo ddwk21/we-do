@@ -1,3 +1,4 @@
+const { get_distance } = require('../utils/helpers')
 const router = require('express').Router();
 const { User, Message, Event } = require('../models');
 //import middleware
@@ -5,6 +6,7 @@ const withAuth = require('../utils/auth');
 
 router.get('/', withAuth ,async (req,res) => {
   try {
+      get_distance()
     // get req session user id
     // query user.findbypk
     const dbeventData = await Event.findAll({

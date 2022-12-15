@@ -5,10 +5,10 @@
     <div class="event-card">
       <div class="card-heading">
         <h2 class="card-title">{{name}}</h2>
-        <button class="btn card-btn">Join event</button>
+        <button class="btn card-btn joinBtn" data-eventId="{{id}}"  data-location="{{location}}">Join event</button>
       </div>
       <div class="card-body">
-        <p>Location: {{location}}</p>
+        <p> Location: {{location}}</p>
         <p>{{time_and_date}}</p>
         <div class="description-body">
           <p>{{description}}</p>
@@ -20,4 +20,7 @@
     {{/each}}
   </div>
 </div>
-
+<script src="/js/events.js"></script>
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
