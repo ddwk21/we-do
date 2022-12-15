@@ -104,17 +104,36 @@ header {
 .header-options {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 #addEvent {
   margin-right: 15px;
   border-radius: none;
+  height: 100%;
+}
+
+#addEvent:hover {
+  background-color: #5a803e;
+  color: orange;
 }
 
 #logout {
   background-color: transparent;
   color: #39395f;
   border: none;
+}
+
+#dropdown-btn {
+  background-color: #73a24e;
+  color: white;
+  border: none;
+  height: 100%;
+}
+
+#dropdown-btn:hover {
+  background-color: #5a803e;
+  color: orange;
 }
 
 .dropdown-menu {
@@ -219,7 +238,10 @@ li {
   width: 900px;
 }
 
-
+.card-btn:hover {
+  background-color: #5a803e;
+  color: orange;
+}
 
 .card-heading {
   display: flex;
