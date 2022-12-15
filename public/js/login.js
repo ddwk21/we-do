@@ -1,3 +1,5 @@
+var createAccountBtn = document.getElementById('create-account-btn')
+
 const loginFormHandler = async (event) => {
   event.preventDefault();
 
@@ -19,6 +21,13 @@ const loginFormHandler = async (event) => {
   }
 };
 
+function handleCreatePage() {
+  console.log("TEST")
+  window.location.href = '/signup'
+}
+
 document
   .querySelector('.login-form')
   .addEventListener('submit', loginFormHandler);
+
+createAccountBtn.addEventListener('click', handleCreatePage)
