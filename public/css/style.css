@@ -81,8 +81,11 @@ body {
 }
 
 header {
+  position: fixed;
   background-color: #416a59;
+  z-index: 5;
   height: 100px;
+  width: 100%;
   display: flex;
   align-items: center;
   margin-bottom: 25px;
@@ -221,6 +224,7 @@ li {
   flex-direction: column;
   color: white;
   margin-right: 50px;
+  margin-top: 150px;
 }
 
 .btn {
@@ -248,14 +252,14 @@ li {
   height: 24px;
 }
 
-.join-icon {
+/* .join-icon {
   filter: invert(91%) sepia(9%) saturate(739%) hue-rotate(5deg) brightness(105%) contrast(92%);
   height: 35px;
 }
 
 .join-icon:hover {
   filter: invert(91%) sepia(9%) saturate(739%) hue-rotate(5deg) brightness(10%) contrast(92%);
-}
+} */
 
 .date-icon {
   filter: invert(91%) sepia(9%) saturate(739%) hue-rotate(5deg) brightness(105%) contrast(92%);
@@ -264,11 +268,12 @@ li {
 }
 
 .card-btn {
-  background-color: #416a59;
+  background-color: #73a24e;
+  font-weight: bold;
 }
 
 .card-btn:hover {
-  background-color: #59803e00;
+  background-color: #59803ed8;
   color: orange;
 }
 
@@ -282,6 +287,7 @@ li {
 
 .card-title {
   color: #f5eec2;
+  text-shadow: 1px 1px 8px black;
 }
 
 .card-body {
