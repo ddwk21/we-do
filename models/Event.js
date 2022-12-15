@@ -40,6 +40,10 @@ Event.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
+        participants:{
+            type: DataTypes.JSON,
+            defaultValue: [],
+        },
         user_id: {
             type: DataTypes.INTEGER,
             allowNull: false,

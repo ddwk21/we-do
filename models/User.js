@@ -41,7 +41,7 @@ User.init(
     },
     interests: {
       type: DataTypes.STRING,
-    }
+    },
   },
   {
     hooks: {
