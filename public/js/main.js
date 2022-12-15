@@ -63,8 +63,12 @@ function handleSubmit(e){
 form.addEventListener('submit', handleSubmit)
 
 
+
+var createForm = document.getElementById('signupForm')
 //account creation submission
 function createSubmit(e){
+
+
 
   e.preventDefault();
 
@@ -91,6 +95,6 @@ function createSubmit(e){
     body: JSON.stringify(userData)
   })
 
-  console.log(nameInput.value)
-
 }
+
+createForm.addEventListener('submit', createSubmit)
