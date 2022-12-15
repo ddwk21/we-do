@@ -5,7 +5,7 @@ router.post( '/', async(req, res) => {
     const {nameInput, noPart, maxPart, time, loc, desc} = req.body
     try {
         await Event.create({
-            name:name,
+            name:nameInput,
             number_of_participants:noPart,
             max_participants:maxPart,
             time_and_date:time,

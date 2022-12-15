@@ -43,4 +43,20 @@ router.post('/logout', (req, res) => {
   }
 });
 
+router.post( '/create', async(req, res) => {
+  const {nameSignup, emailSignup, ZIPSignup, passwordSignup} = req.body
+  try {
+      await User.create({
+          username:nameSignup,
+          email:emailSignup,
+          password:passwordSignup,
+          zip_code:ZIPSignup,
+          interests:null,
+      })}
+
+  catch (err) {
+      res.status(400).json(err);
+    }
+  })
+
 module.exports = router;
