@@ -2,6 +2,7 @@ function joinEventHandler(e){
   e.preventDefault();
   const eventLocation = e.target.dataset.location
     const url = `https://maps.googleapis.com/maps/api/distancematrix/json?origins=${encodeURIComponent('53215')}&destinations=${encodeURIComponent(eventLocation)}&units=imperial&key=AIzaSyDDMvRzhH0p3eGfFPLj2wPrPf3Tv2IhiVE`
+    console.log(url)
     let geocodedEvents = {
       name: nameInput.value,
       max_participants: maxPartInput.value,
@@ -12,7 +13,7 @@ function joinEventHandler(e){
       tags: tagInput.value
     }
     fetch(url, {
-      method: 'POST',
+      method: 'GET',
       headers: {
         'Content-Type': 'application/json',
         'Access-Control-Allow-Origin': 'https://maps.googleapis.com/maps/api/distancematrix/json?',
