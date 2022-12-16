@@ -38,7 +38,7 @@ router.put('/join/:eventId',async(req,res)=>{
         console.log('Success!')
         res.status(200).json(geocodeResponse.data)
     }else{
-        res.status(409).json({message:'No tank you'})
+        res.status(409).json({message:'Event full!'})
     }
 
     //push req session user ID into participants
