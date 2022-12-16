@@ -24,14 +24,14 @@ function joinEvent(e) {
         return res.json()
   
   
-      })
-      .then(distanceData=>{
+    })
+    .then(distanceData=>{
         console.log(distanceData)
 
         const elements = distanceData.rows[0].elements[0]
         alert(`Event joined! You are ${elements.distance.text} miles away. It will take ${elements.duration.text} to get there.`)
         location.reload()
-      })
+    })
     .catch((err)=>console.log(err))
 }
 
