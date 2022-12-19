@@ -1,6 +1,6 @@
 // const dbInterface = require('../../utils/dbInterface.js')
 
-const { response } = require("express");
+// const { response } = require("express");
 
 // Get the modal
 var modal = document.getElementById("addModal");
