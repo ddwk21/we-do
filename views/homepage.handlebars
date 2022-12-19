@@ -5,19 +5,21 @@
     <div class="event-card">
       <div class="card-heading">
         <h2 class="card-title">{{name}}</h2>
-        <button class="btn card-btn">Join event</button>
+        <button class="btn card-btn joinBtn" data-eventId="{{id}}" data-location= "{{location}}" >Join event</button>
       </div>
       <div class="card-body">
-        <p>Location: {{location}}</p>
-        <p>{{time_and_date}}</p>
+        <p><img class="location-icon" src="/assets/location.png"/> {{location}}</p>
+        <p><img class="date-icon" src="/assets/date.png"/>{{time_and_date}}</p>
         <div class="description-body">
           <p>{{description}}</p>
         </div>
-        <p>Participants joined: {{number_of_participants}}/{{max_participants}}</p>
+        <p><img class="person-icon" src="/assets/person-icon.png"/> {{number_of_participants}}/{{max_participants}}</p>
         <p>#{{tags}}</p>
       </div>
     </div>
     {{/each}}
   </div>
 </div>
+
+<script src="/js/homepage.js"></script>
 
