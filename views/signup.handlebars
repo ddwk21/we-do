@@ -1,34 +1,35 @@
 <div class="signup-page-container">
-  <h2>Sign Up</h2>
-
-  <form class="form signup-form">
+  <h2 class="create-account-title">Create a new WE DO account</h2>
+  <form class="form signup-form"
+  id="signupForm">
   <!--Name-->
-  <div class="form-group">
-      <label for="name-signup">Your Name:</label>
-      <input class="form-input" type="text" id="name-signup" />
+    <div class="form-group">
+      <label for="nameSignup">Your Username:</label>
+      <input class="form-input" type="text" id="nameSignup" />
     </div>
     <!--Email-->
     <div class="form-group">
-      <label for="email-signup">Your Email:</label>
-      <input class="form-input" type="text" id="email-signup" />
+      <label for="emailSignup">Your email:</label>
+      <input class="form-input" type="text" id="emailSignup" />
     </div>
     <!--ZIP-->
     <div class="form-group">
-      <label for="ZIP-signup">Your ZIP Code:</label>
-      <input class="form-input" type="text" id="ZIP-signup" />
+      <label for="ZIPSignup">Your ZIP Code:</label>
+      <input class="form-input" type="text" id="ZIPSignup" />
     </div>
     <!--password-->
     <div class="form-group">
-      <label for="password-signup">Password:</label>
-      <input class="form-input" type="password" id="password-signup" />
+      <label for="passwordSignup">Password:</label>
+      <input class="form-input" type="password" id="passwordSignup" />
     </div>
-  <!--password confirm-->
-  <div class="form-group">
-      <label for="password-login">Confirm Password:</label>
-      <input class="form-input" type="password" id="password-signup" />
+    <!--password confirm-->
+    <div class="form-group">
+      <label for="passwordConfirm">Confirm Password:</label>
+      <input class="form-input" type="password" id="passwordConfirm" />
     </div>
-
-
+    <button type="submit" class="btn btn-default" id="signupBtn">Submit</button>
+    <p id="noMatchAlert"></p>
   </form>
 </div>
 
+<script src = '/js/signup.js'></script>
