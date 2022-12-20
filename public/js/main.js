@@ -48,13 +48,17 @@ function handleSubmit(e){
     tags: tagInput.value
   }
 
-  fetch('/api/eventRoutes', {
+  fetch('/api/events', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify(eventData)
   })
+  .then((res)=>{
+    if(res.ok) location.reload()
+  })
+  .catch((err)=>console.log(err))
 
   console.log(nameInput.value)
 
